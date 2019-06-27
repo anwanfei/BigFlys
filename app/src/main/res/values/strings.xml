@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BigFly</string>
+
+    <string name="distance">远方</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="version">版本</string>
+    <string name="about">关于我们</string>
+    <string name="normal_broadcast">普通广播</string>
+    <string name="collection">收藏</string>
+</resources>

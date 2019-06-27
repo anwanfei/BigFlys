@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_upload"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="上传头像 " />
+
+    <TextView
+        android:id="@+id/tv_download_ok"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="ok下载" />
+
+    <TextView
+        android:id="@+id/tv_download_retrofit"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="retrofit下载" />
+
+    <TextView
+        android:id="@+id/tv_download_con"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="原生下载apk" />
+
+    <TextView
+        android:id="@+id/tv_download_service"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="服务中下载" />
+
+    <TextView
+        android:id="@+id/tv_download_more"
+        style="@style/normal_stytle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_radius"
+        android:text="多线程断点下载" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+        <ProgressBar
+            android:id="@+id/pb0"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <ProgressBar
+            android:id="@+id/pb1"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <ProgressBar
+            android:id="@+id/pb2"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0%" />
+
+    </LinearLayout>
+</LinearLayout>

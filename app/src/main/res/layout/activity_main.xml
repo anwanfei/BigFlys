@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            app:subtitle="BigFly"
+            app:subtitleTextColor="#fff"
+            app:title="首页"
+            app:titleTextColor="#fff" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!--RadioGroup-->
+        <RadioGroup
+            android:id="@+id/rg_bottom_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/botttom_tag_style"
+                android:background="@null"
+                android:drawableTop="@drawable/rb_home_selector"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/rb_distance"
+                style="@style/botttom_tag_style"
+                android:background="@null"
+                android:drawableTop="@drawable/rb_distance_selector"
+                android:text="@string/distance" />
+
+            <RadioButton
+                android:id="@+id/rb_wheel"
+                style="@style/botttom_tag_style"
+                android:background="@null"
+                android:drawableTop="@drawable/rb_wheel_selector"
+                android:text="轮子" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/botttom_tag_style"
+                android:background="@null"
+                android:drawableTop="@drawable/rb_my_selector"
+                android:text="我的" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:menu="@menu/menu" />
+
+</android.support.v4.widget.DrawerLayout>
